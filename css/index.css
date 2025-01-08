@@ -3,3 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+footer {
+  background-color: #252b42;
+}
+
+footer h3 {
+  color: aliceblue;
+}
+
+footer a {
+  text-decoration: underline;
+  color: aliceblue;
+}
+
+footer p {
+  color: white;
+}
