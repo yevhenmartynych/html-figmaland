@@ -1,29 +1,23 @@
-# HTML Template Repository with HTML Proofer
+# Figmaland
 
-This template repository includes preconfigured GitHub Action that will validate html files in a project with (HTMLProofer)[https://github.com/gjtorikian/html-proofer/].
-And htmx to load partials
+Односторінковий лендинг
 
-```html
-<main data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.main.partial.html"></main>
-```
+## 🔗 Links
 
+[Project Demo](https://yevhenmartynych.github.io/html-figmaland/)
 
-```js
-function init() {
-    import('...js');
-}
+## 🛠️ Technologies
 
-const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
-let loadedPartialsCount = 0;
+The project was built using the following technologies:
 
-document.body.addEventListener('htmx:afterOnLoad', () => {
-    loadedPartialsCount++;
-    if (loadedPartialsCount === totalPartials) init();
-});
-```
+- **HTML5** — used for structuring the web page.
+- **CSS3** — for styling elements and adding responsiveness.
+- **JavaScript** — provides user interaction.
 
-Add the data-proofer-ignore attribute to any tag to ignore it from every check.
+---
 
-```html
-<a href="https://notareallink" data-proofer-ignore>Not checked.</a>
-```
+## 👨‍💻 Author
+
+- **Name:** Yevhen
+- **GitHub:** [github.com/yevhenmartynych](https://github.com/yevhenmartynych)
+- **Discord:** yevhenmartynych
