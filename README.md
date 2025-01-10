@@ -21,3 +21,11 @@ The project was built using the following technologies:
 - **Name:** Yevhen
 - **GitHub:** [github.com/yevhenmartynych](https://github.com/yevhenmartynych)
 - **Discord:** yevhenmartynych
+
+<!--
+<main
+  data-hx-trigger="load"
+  data-hx-swap="outerHTML"
+  data-hx-get="index.main.partial.html"
+></main>
+-->
