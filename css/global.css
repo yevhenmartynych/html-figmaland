@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
-.jost-<uniquifier> {
-  font-family: "Jost", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
+@font-face {
+  font-family: 'Graphik-Bold';
+  src: url(../fonts/Graphik-Bold.woff), url(../fonts/Graphik-Bold.woff2);
+  font-weight: 700;
   font-style: normal;
-} */
+}
+
+@font-face {
+  font-family: 'Graphik-Regular';
+  src: url(../fonts/Graphik-Light.woff), url(../fonts/Graphik-Light.woff2);
+  font-weight: 300;
+  font-style: normal;
+}
 
 *,
 *::before,
@@ -23,8 +25,9 @@
 :root {
   --main-color: #ffff;
   --secondary-color: #2091f9;
+  --main-font: 'Graphik-Regular', sans-serif;
+  --header-font: 'Graphik-Bold', sans-serif;
   scroll-behavior: smooth;
-  font-family: 'Jost', serif;
 }
 
 h1,

@@ -11,7 +11,7 @@
   }
 
   .header__menu-item {
-    color: aliceblue;
+    color: var(--main-color);
     font-size: 15px;
     font-weight: 300;
   }
