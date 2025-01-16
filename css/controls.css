@@ -1,0 +1,16 @@
+.hero__cta-button {
+  font-family: var(--main-font);
+  padding: 12px 64px;
+  border-radius: 30px;
+  color: var(--main-color);
+  background: var(--secondary-color);
+}
+
+.promo__cta-btn {
+  margin: auto;
+  font-family: var(--header-font);
+  padding: 16px 60px;
+  border-radius: 30px;
+  color: var(--main-color);
+  background: var(--secondary-color);
+}

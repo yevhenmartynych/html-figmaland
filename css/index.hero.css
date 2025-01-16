@@ -10,8 +10,7 @@
   }
 
   .hero__title,
-  .hero__subtitle,
-  .hero__cta-button {
+  .hero__subtitle {
     color: var(--main-color);
     text-align: center;
     font-weight: 300;
@@ -33,14 +32,6 @@
     span {
       display: none;
     }
-  }
-
-  .hero__cta-button {
-    font-family: var(--main-font);
-    padding: 12px 64px;
-    border-radius: 30px;
-    color: var(--main-color);
-    background: var(--secondary-color);
   }
 }
 

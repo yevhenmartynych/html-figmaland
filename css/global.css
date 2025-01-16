@@ -25,6 +25,7 @@
 :root {
   --main-color: #ffff;
   --secondary-color: #2091f9;
+  --secondary-text-color: #374754;
   --main-font: 'Graphik-Regular', sans-serif;
   --header-font: 'Graphik-Bold', sans-serif;
   scroll-behavior: smooth;
