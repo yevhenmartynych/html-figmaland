@@ -14,8 +14,6 @@ As part of the **Frontend Fundamentals** course, I implemented a responsive land
 Check out the live version of the project here:
 <a href="https://yevhenmartynych.github.io/html-figmaland/" target="_blank"> 🖇️ FigmaLand Website</a>
 
-[Project Demo](https://yevhenmartynych.github.io/html-figmaland/)
-
 ## 🛠️ Technologies
 
 The project was built using the following technologies:
