@@ -36,7 +36,7 @@
         justify-content: center;
         align-items: center;
         gap: 15px;
-        border: 1px solid var(--secondary-text-color);
+        border: 1px solid var(--border-color);
         padding: 25px 40px;
         width: 270px;
         height: 150px;
@@ -44,6 +44,9 @@
           font-family: var(--main-font);
           color: var(--secondary-text-color);
         }
+      }
+      .partners__logo:nth-child(n + 4):nth-child(-n + 8) {
+        display: none;
       }
     }
   }
