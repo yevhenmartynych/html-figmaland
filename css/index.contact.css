@@ -1,0 +1,111 @@
+.contact {
+  padding: 100px 0;
+  .contact__container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    .contact__title {
+      font-family: var(--main-font);
+      font-size: 48px;
+      text-align: center;
+    }
+    .contact__description {
+      font-family: var(--main-font);
+      font-size: 28px;
+      text-align: center;
+    }
+    .contact__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      overflow: visible;
+      margin-bottom: 80px;
+      .contact__left-container {
+        order: 2;
+        overflow: visible;
+        .contact__form-container {
+          display: flex;
+          flex-direction: column;
+          gap: 45px;
+          padding: 52px 49px;
+          border: 1px solid var(--border-color);
+          box-shadow: 0 13px 19px 0 var(--shadow-color);
+          position: relative;
+
+          border-radius: 45px;
+          .contact__form-title {
+            font-family: var(--header-font);
+            text-align: center;
+          }
+          .contact__form {
+            display: flex;
+            flex-direction: column;
+            gap: 45px;
+            font-family: var(--main-font);
+            font-size: 15px;
+
+            .contact__input {
+              border: 1px solid var(--border-color);
+              background-color: var(--form-bg);
+              border-radius: 39px;
+              padding: 20px 19px;
+            }
+            .contact__input::placeholder {
+              color: var(--black-text-color);
+            }
+
+            .contact__textarea {
+              height: 200px;
+              padding: 23px 20px;
+              border: 1px solid var(--border-color);
+              background-color: var(--form-bg);
+              resize: none;
+            }
+            .contact__textarea::placeholder {
+              color: var(--black-text-color);
+            }
+          }
+        }
+      }
+      .contact__right-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        .contact__social-media {
+          order: 1;
+        }
+        .contact__info {
+          order: 2;
+          .contact__address {
+            .contact__info-list {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              .contact__info-item {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                gap: 10px;
+                font-family: var(--main-font);
+                .contact__info-img {
+                  width: auto;
+                }
+                .contact__info-text,
+                .contact__info-link {
+                  font-style: normal;
+                  color: var(--dark-text-color);
+                  padding: 10px;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+        .contact__map {
+          display: none;
+        }
+      }
+    }
+  }
+}
