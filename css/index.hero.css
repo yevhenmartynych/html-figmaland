@@ -84,3 +84,15 @@
     height: 930px;
   }
 }
+
+.hero.menu-open {
+  .hero__title {
+    display: none;
+  }
+  .hero__subtitle {
+    display: none;
+  }
+  .hero__cta-button {
+    display: none;
+  }
+}
