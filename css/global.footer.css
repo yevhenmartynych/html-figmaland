@@ -1,7 +1,6 @@
 .footer {
   background: var(--background-color);
   padding: 100px 0;
-
   .footer__container {
     display: flex;
     flex-direction: column;
@@ -36,6 +35,37 @@
       display: flex;
       justify-content: center;
       gap: 24px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    .footer__container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      flex: 1;
+      gap: 30px;
+      .footer__list {
+        text-align: start;
+        gap: 20px;
+      }
+      .footer__list-contact {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    .footer__container {
+      flex-direction: row;
+      .footer__list {
+        text-align: start;
+        gap: 20px;
+      }
     }
   }
 }

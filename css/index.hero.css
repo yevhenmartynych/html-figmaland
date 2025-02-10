@@ -1,36 +1,66 @@
 .hero {
-  height: 750px;
+  padding: 20px 0;
+  height: 700px;
   .hero__container {
     display: flex;
     flex-direction: column;
-    min-height: 600px;
     justify-content: center;
-    align-items: center;
-    gap: 3rem;
+    padding: 50px 30px;
+    gap: 60px;
+    .hero__title,
+    .hero__subtitle {
+      color: var(--main-color);
+      text-align: center;
+      padding: 10px;
+      font-weight: 300;
+    }
+    .hero__title {
+      font-family: var(--header-font);
+      font-size: 48px;
+    }
+    .hero__subtitle {
+      font-family: var(--main-font);
+      font-size: 28px;
+
+      span {
+        display: none;
+      }
+    }
   }
 
-  .hero__title,
-  .hero__subtitle {
-    color: var(--main-color);
-    text-align: center;
-    font-weight: 300;
+  @media screen and (min-width: 768px) {
+    .hero__container {
+      padding: 80px 60px;
+      .hero__title {
+        font-family: var(--header-font);
+        padding: 10px;
+      }
+      .hero__subtitle {
+        padding: 10px;
+        line-height: 40px;
+        span {
+          display: block;
+        }
+      }
+    }
   }
 
-  .hero__title {
-    font-family: var(--main-font);
-    max-width: 350px;
-    font-size: 48px;
-    line-height: 55px;
-    overflow: hidden;
-  }
-
-  .hero__subtitle {
-    font-family: var(--main-font);
-    max-width: 265px;
-    font-size: 28px;
-
-    span {
-      display: none;
+  @media screen and (min-width: 1200px) {
+    .hero__container {
+      padding: 80px 0;
+      max-width: 800px;
+      .hero__title,
+      .hero__subtitle {
+        padding: 20px;
+      }
+      .hero__title {
+        font-size: 74px;
+        line-height: 84px;
+        text-align: center;
+      }
+      .hero__cta-button {
+        max-width: 236px;
+      }
     }
   }
 }
@@ -44,4 +74,13 @@
   height: 750px;
   background: url(../images/bg-hero.png) no-repeat center/cover;
   z-index: -1;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    margin-bottom: 80px;
+  }
+  .hero::before {
+    height: 930px;
+  }
 }

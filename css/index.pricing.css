@@ -1,7 +1,6 @@
 .pricing {
   background: var(--background-color);
   padding: 0 28px;
-  margin-bottom: 80px;
 
   .pricing__container {
     display: flex;
@@ -108,6 +107,37 @@
         .pricing__button {
           background: var(--main-color);
           color: var(--secondary-color);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pricing {
+    .pricing__container {
+      .pricing__cards {
+        align-items: center;
+        .pricing__card {
+          width: 330px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .pricing {
+    .pricing__container {
+      .pricing__cards {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px !important;
+        .pricing__card {
+          padding: 40px;
+        }
+        .pricing__card--highlighted {
+          padding: 83px 40px;
         }
       }
     }

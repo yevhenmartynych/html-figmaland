@@ -48,3 +48,24 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .testimonials {
+    .testimonials__container {
+      .testimonials__item {
+        .testimonials__description {
+          font-family: var(--main-font);
+          font-size: 28px;
+          line-height: 40px;
+          padding: 10px;
+          max-width: 950px;
+        }
+        .testimonials__user {
+          .testimonials__user-info {
+            font-family: var(--main-font);
+          }
+        }
+      }
+    }
+  }
+}

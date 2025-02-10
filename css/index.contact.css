@@ -17,6 +17,7 @@
     .contact__wrapper {
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 50px;
       overflow: visible;
       margin-bottom: 80px;
@@ -82,21 +83,23 @@
               display: flex;
               flex-direction: column;
               gap: 10px;
+
               .contact__info-item {
                 display: flex;
                 align-items: center;
-                width: 100%;
                 gap: 10px;
+                flex: 1;
                 font-family: var(--main-font);
-                .contact__info-img {
-                  width: auto;
+
+                .contact__info-link {
+                  display: inline-block;
                 }
                 .contact__info-text,
                 .contact__info-link {
                   font-style: normal;
                   color: var(--dark-text-color);
                   padding: 10px;
-                  width: 100%;
+                  flex: 1;
                 }
               }
             }
@@ -104,6 +107,59 @@
         }
         .contact__map {
           display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    .contact__container {
+      .contact__wrapper {
+        .contact__left-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .contact__form-container {
+            width: 453px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    .contact__container {
+      align-items: center;
+      .contact__wrapper {
+        flex-direction: row;
+        .contact__right-container {
+          order: 2;
+          align-items: flex-start;
+          .contact__info {
+            order: 1;
+            .contact__address {
+              .contact__info-list {
+                display: flex;
+                flex-direction: row;
+                .contact__info-item {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                }
+              }
+            }
+          }
+          .contact__map {
+            order: 2;
+            display: block;
+          }
+          .contact__social-media {
+            order: 3;
+          }
         }
       }
     }
