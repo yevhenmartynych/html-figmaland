@@ -1,12 +1,14 @@
 .pricing {
   background: var(--background-color);
   padding: 0 28px;
+  margin-bottom: 80px;
 
   .pricing__container {
     display: flex;
     flex-direction: column;
     gap: 80px;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
+
     .pricing__text {
       color: var(--light-text-color);
       font-family: var(--main-font);
